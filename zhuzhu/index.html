@@ -8,13 +8,40 @@ canvas {
   height: 330px;
 }
 h2, h3, h4 {
+  display: none;
   color: #F46;
   text-align: center;
 }
 .zhuzhu {
+    display: none;
     margin: 0 auto;
     width: 80%;
-}</style></head><body><h2>亲爱的猪猪</h2><h3>七夕节快乐么么哒 =w=</h3><h4>让以后我们天天快快乐乐在一起</h4><canvas></canvas><img class="zhuzhu" src="https://wx3.sinaimg.cn/large/0070GpqCgy1fubz4b2xxgj30rs0rsn47.jpg"><script>function heart() {
+}</style></head><body><button>缺钱点我</button><h2>亲爱的猪猪</h2><h3>七夕节快乐么么哒 =w=</h3><h4>让以后我们天天快快乐乐在一起</h4><canvas></canvas><img class="zhuzhu" src="https://wx3.sinaimg.cn/large/0070GpqCgy1fubz4b2xxgj30rs0rsn47.jpg"><script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><script>var message = [
+    '哈哈哈，想知道什么惊喜吗？再点一下',
+    '不够哦，再点一下',
+    '都点了两次了，不再点一下吗？',
+    '来嘛',
+    '继续嘛',
+    '别停',
+    '要来咯',
+    '准备好哦',
+    '真的来咯'
+]
+var i = 0;
+$('button').on('click', function() {
+    var msg = message[i++]
+    if (msg) {
+        alert(msg)
+    } else {
+        $('button').hide()
+        $('h2').fadeIn(500)
+        $('h3').fadeIn(1000)
+        $('h4').fadeIn(1500)
+        heart();
+        $('.zhuzhu').fadeIn(3000)
+    }
+})
+</script><script>function heart() {
 var canvas = document.querySelector('canvas');
 var context = canvas.getContext('2d');
 // 画布的宽度
@@ -164,5 +191,4 @@ index2++;
 window.requestAnimationFrame(draw);
 }
 window.requestAnimationFrame(draw);
-}
-heart();</script></body></html>
+}</script></body></html>
