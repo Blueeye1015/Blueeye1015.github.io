@@ -14,7 +14,7 @@ h2, h3, h4 {
 .zhuzhu {
     margin: 0 auto;
     width: 80%;
-}</style></head><body><h2>亲爱的猪猪</h2><h3>七夕节快乐 =w=</h3><h4>让以后我们天天快快乐乐在一起</h4><canvas></canvas><img class="zhuzhu" src="https://wx3.sinaimg.cn/large/0070GpqCgy1fubz4b2xxgj30rs0rsn47.jpg"><script>function heart() {
+}</style></head><body><h2>亲爱的猪猪</h2><h3>七夕节快乐么么哒 =w=</h3><h4>让以后我们天天快快乐乐在一起</h4><canvas></canvas><img class="zhuzhu" src="https://wx3.sinaimg.cn/large/0070GpqCgy1fubz4b2xxgj30rs0rsn47.jpg"><script>function heart() {
 var canvas = document.querySelector('canvas');
 var context = canvas.getContext('2d');
 // 画布的宽度
@@ -33,7 +33,7 @@ var pointArr = [];
 canvas.width = width;
 // 设置 画布的高度
 canvas.height = height;
-context.lineWidth = 3;
+context.lineWidth = 2;
 // 将画布的原点（0,0），移动到中间
 // 移动原点是为了能让整个心形显示出来
 context.translate(width / 2, height / 2);
@@ -138,7 +138,7 @@ return;
 }
 context.lineJoin = "round";
 context.lineCap = "round";
-context.shadowBlur = 20;
+context.shadowBlur = 10;
 context.shadowColor = shadowColor;
 // 当index2 >= interval 时开始画第二种颜色的线
 if (index2 >= interval) {
